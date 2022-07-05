@@ -1,0 +1,9 @@
+<Project>
+	<PropertyGroup>
+		<BinFolder>$(SolutionDir)bin\$(Configuration)\</BinFolder>
+		<OutputPath>$(BinFolder)</OutputPath>
+		<OutDir>$(BinFolder)</OutDir>
+		<OutputPath>$(BinFolder)</OutputPath>
+		<BaseIntermediateOutputPath>$(SolutionDir)obj\$(MSBuildProjectName)\$(Configuration)\</BaseIntermediateOutputPath>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E3BBACDF-AA4A-4D1D-80D5-EDC0BB2C3023}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EDCAF884-3E4E-475D-A3A0-B72574D6AF65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitOfByte.Net.Transformations", "src\BitOfByte.Net.Transformations\BitOfByte.Net.Transformations.csproj", "{585FA27C-A544-481D-8F74-B05925E7F71A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitOfByte.Net.TransformationsTests", "tests\BitOfByte.Net.TransformationsTests\BitOfByte.Net.TransformationsTests.csproj", "{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{0E0CA0A6-AC7B-4CE0-ACCC-A35541852809}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{585FA27C-A544-481D-8F74-B05925E7F71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585FA27C-A544-481D-8F74-B05925E7F71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585FA27C-A544-481D-8F74-B05925E7F71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585FA27C-A544-481D-8F74-B05925E7F71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{585FA27C-A544-481D-8F74-B05925E7F71A} = {E3BBACDF-AA4A-4D1D-80D5-EDC0BB2C3023}
+		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B} = {EDCAF884-3E4E-475D-A3A0-B72574D6AF65}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E8039B1-35F5-4651-883E-E8BADCD81042}
+	EndGlobalSection
+EndGlobal
