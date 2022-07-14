@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -26,7 +26,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <DocumentationMarkdown>$(MSBuildProjectDirectory)\README.md</DocumentationMarkdown>
     <VsxmdAutoDeleteXml>True</VsxmdAutoDeleteXml>
