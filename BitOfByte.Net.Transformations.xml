@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BitOfByte.Net.Transformations</name>
+    </assembly>
+    <members>
+        <member name="T:BitOfByte.Net.Transformations.ITransformationEngine">
+            <summary>
+            Interface for transformation engine
+            </summary>
+        </member>
+        <member name="P:BitOfByte.Net.Transformations.ITransformationEngine.ForType">
+            <summary>
+            Get the type of transformations engine supports.
+            </summary>
+            <value>
+            Transformation type supported by engine.
+            </value>
+        </member>
+        <member name="M:BitOfByte.Net.Transformations.ITransformationEngine.Transform``1(BitOfByte.Net.Transformations.TransformDefinition,``0)">
+            <summary>
+            Applies the transformation on source.
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="definition">The definition.</param>
+            <param name="source">The source.</param>
+            <returns></returns>
+        </member>
+        <member name="T:BitOfByte.Net.Transformations.ITransformationsProvider">
+            <summary>
+            Interface for transformations provider
+            </summary>
+        </member>
+        <member name="M:BitOfByte.Net.Transformations.ITransformationsProvider.Get(System.String)">
+            <summary>
+            Gets the TransformDefinition with then specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>TransformDefinition with the specified name if found!</returns>
+        </member>
+        <member name="M:BitOfByte.Net.Transformations.ITransformationsProvider.GetAsync(System.String)">
+            <summary>
+            Gets the TransformDefinition with then specified name asynchornously.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>TransformDefinition with the specified name if found!</returns>
+        </member>
+        <member name="T:BitOfByte.Net.Transformations.LiquidTransformation">
+            <summary>
+            POCO to hold liquid transformation definition
+            </summary>
+            <seealso cref="T:BitOfByte.Net.Transformations.TransformDefinition" />
+        </member>
+        <member name="P:BitOfByte.Net.Transformations.LiquidTransformation.Template">
+            <summary>
+            Gets or sets the transformation template.
+            </summary>
+            <value>
+            The template.
+            </value>
+        </member>
+        <member name="T:BitOfByte.Net.Transformations.TransformationsProvider">
+            <summary>
+            TransformationsProvider implementation using EF Repository
+            </summary>
+        </member>
+        <member name="M:BitOfByte.Net.Transformations.TransformationsProvider.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BitOfByte.Net.Transformations.TransformationsProvider"/> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:BitOfByte.Net.Transformations.TransformationsProvider.Get(System.String)">
+            <summary>
+            Gets the TransformDefinition with then specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>
+            TransformDefinition with the specified name if found!
+            </returns>
+        </member>
+        <member name="M:BitOfByte.Net.Transformations.TransformationsProvider.GetAsync(System.String)">
+            <summary>
+            Gets the TransformDefinition with then specified name asynchornously.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>
+            TransformDefinition with the specified name if found!
+            </returns>
+        </member>
+        <member name="T:BitOfByte.Net.Transformations.TransformDefinition">
+            <summary>
+            Represents for Transformation
+            </summary>
+        </member>
+        <member name="P:BitOfByte.Net.Transformations.TransformDefinition.Name">
+            <summary>
+            Gets or sets the transformation name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:BitOfByte.Net.Transformations.TransformDefinition.Type">
+            <summary>
+            Gets or sets the transformation type.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+    </members>
+</doc>

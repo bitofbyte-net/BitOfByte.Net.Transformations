@@ -1,18 +1,14 @@
-﻿using CSharpFunctionalExtensions;
+﻿using BitOfByte.Net.Transformations;
+using CSharpFunctionalExtensions;
 using Fluid;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BitOfByte.Net.Transformations
+namespace BitOfByte.Net.FluidTransformations
 {
     /// <summary>
     /// Implementation of TransformationEngine using Fluid
     /// </summary>
     /// <seealso cref="BitOfByte.Net.Transformations.ITransformationEngine" />
-    public class FluidTransformationEngine : ITransformationEngine
+    public class Engine : ITransformationEngine
     {
         /// <summary>
         /// Get the type of transformations engine supports.

@@ -1,18 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>$(SolutionDir)BitOfByte.Net.FluidTransformations.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="BitOfByte.Net.Data" Version="0.1.0" />
+    <PackageReference Include="BitOfByte.Net.Transformations" Version="0.1.0" />
     <PackageReference Include="CSharpFunctionalExtensions" Version="2.29.4" />
     <PackageReference Include="Fluid.Core" Version="2.2.15" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
     <PackageReference Include="Vsxmd" Version="1.4.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -31,7 +30,6 @@
     <DocumentationMarkdown>$(MSBuildProjectDirectory)\README.md</DocumentationMarkdown>
     <VsxmdAutoDeleteXml>True</VsxmdAutoDeleteXml>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-    <DocumentationFile>$(SolutionDir)BitOfByte.Net.Transformations.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

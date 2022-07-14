@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BitOfByte.Net.FluidTransformations</name>
+    </assembly>
+    <members>
+        <member name="T:BitOfByte.Net.FluidTransformations.Engine">
+            <summary>
+            Implementation of TransformationEngine using Fluid
+            </summary>
+            <seealso cref="T:BitOfByte.Net.Transformations.ITransformationEngine" />
+        </member>
+        <member name="P:BitOfByte.Net.FluidTransformations.Engine.ForType">
+            <summary>
+            Get the type of transformations engine supports.
+            </summary>
+            <value>
+            Transformation type supported by engine.
+            </value>
+        </member>
+        <member name="M:BitOfByte.Net.FluidTransformations.Engine.Transform``1(BitOfByte.Net.Transformations.TransformDefinition,``0)">
+            <summary>
+            Transforms the specified .
+            </summary>
+            <typeparam name="TSource">The type of the source.</typeparam>
+            <param name="definition">The definition.</param>
+            <param name="source">The source.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

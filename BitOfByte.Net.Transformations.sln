@@ -17,6 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitOfByte.Net.FluidTransformations", "src\BitOfByte.Net.FluidTransformations\BitOfByte.Net.FluidTransformations.csproj", "{6D82166B-8F65-4CDA-9C34-3775B1E7BB84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8306A2D1-047F-47B5-988A-C395D420CA37}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +38,10 @@ Global
 		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D82166B-8F65-4CDA-9C34-3775B1E7BB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D82166B-8F65-4CDA-9C34-3775B1E7BB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D82166B-8F65-4CDA-9C34-3775B1E7BB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D82166B-8F65-4CDA-9C34-3775B1E7BB84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +49,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{585FA27C-A544-481D-8F74-B05925E7F71A} = {E3BBACDF-AA4A-4D1D-80D5-EDC0BB2C3023}
 		{118DE7D5-FB0A-48A2-BC94-1368E40BE48B} = {EDCAF884-3E4E-475D-A3A0-B72574D6AF65}
+		{6D82166B-8F65-4CDA-9C34-3775B1E7BB84} = {E3BBACDF-AA4A-4D1D-80D5-EDC0BB2C3023}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E8039B1-35F5-4651-883E-E8BADCD81042}

@@ -27,7 +27,11 @@ jobs:
       run: dotnet test --configuration Release /p:Version=${VERSION} --no-build
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
-    - name: Push
+    - name: Push Transformations
       run: dotnet nuget push BitOfByte.Net.Transformations.${VERSION}.nupkg --source https://nuget.pkg.github.com/satish-krishna/index.json --api-key ${GITHUB_TOKEN}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push FluidTransformations
+      run: dotnet nuget push BitOfByte.Net.FluidTransformations.${VERSION}.nupkg --source https://nuget.pkg.github.com/satish-krishna/index.json --api-key ${GITHUB_TOKEN}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
